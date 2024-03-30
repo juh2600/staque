@@ -99,6 +99,9 @@ public abstract class State {
         return hasAborted;
     }
 
+    /**
+     * @return whether the state has been started and not ended (regardless of whether it is paused)
+     */
     public boolean isActive() {
         return hasStarted() && !hasEnded();
     }
